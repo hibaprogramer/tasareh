@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="securDataSet6" targetNamespace="http://tempuri.org/securDataSet6.xsd" xmlns:mstns="http://tempuri.org/securDataSet6.xsd" xmlns="http://tempuri.org/securDataSet6.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="securConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="securConnectionString (Settings)" PropertyReference="ApplicationSettings.tsareh.Properties.Settings.GlobalReference.Default.securConnectionString" Provider="System.Data.OleDb" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="all_infoTableAdapter" GeneratorDataComponentClassName="all_infoTableAdapter" Name="all_info" UserDataComponentName="all_infoTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="securConnectionString (Settings)" DbObjectName="all_info" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ser_num, emp_nam, emp_fa, emp_gf, emp_ggf, family_nam, Dir, emp_case, case_id, file_state FROM all_info</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ser_num" DataSetColumn="ser_num" />
+              <Mapping SourceColumn="emp_nam" DataSetColumn="emp_nam" />
+              <Mapping SourceColumn="emp_fa" DataSetColumn="emp_fa" />
+              <Mapping SourceColumn="emp_gf" DataSetColumn="emp_gf" />
+              <Mapping SourceColumn="emp_ggf" DataSetColumn="emp_ggf" />
+              <Mapping SourceColumn="family_nam" DataSetColumn="family_nam" />
+              <Mapping SourceColumn="Dir" DataSetColumn="Dir" />
+              <Mapping SourceColumn="emp_case" DataSetColumn="emp_case" />
+              <Mapping SourceColumn="case_id" DataSetColumn="case_id" />
+              <Mapping SourceColumn="file_state" DataSetColumn="file_state" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="securDataSet6" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="securDataSet6" msprop:Generator_UserDSName="securDataSet6">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="all_info" msprop:Generator_TableClassName="all_infoDataTable" msprop:Generator_TableVarName="tableall_info" msprop:Generator_TablePropName="all_info" msprop:Generator_RowDeletingName="all_infoRowDeleting" msprop:Generator_RowChangingName="all_infoRowChanging" msprop:Generator_RowEvHandlerName="all_infoRowChangeEventHandler" msprop:Generator_RowDeletedName="all_infoRowDeleted" msprop:Generator_UserTableName="all_info" msprop:Generator_RowChangedName="all_infoRowChanged" msprop:Generator_RowEvArgName="all_infoRowChangeEvent" msprop:Generator_RowClassName="all_infoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ser_num" msprop:Generator_ColumnVarNameInTable="columnser_num" msprop:Generator_ColumnPropNameInRow="ser_num" msprop:Generator_ColumnPropNameInTable="ser_numColumn" msprop:Generator_UserColumnName="ser_num" type="xs:int" minOccurs="0" />
+              <xs:element name="emp_nam" msprop:Generator_ColumnVarNameInTable="columnemp_nam" msprop:Generator_ColumnPropNameInRow="emp_nam" msprop:Generator_ColumnPropNameInTable="emp_namColumn" msprop:Generator_UserColumnName="emp_nam" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="emp_fa" msprop:Generator_ColumnVarNameInTable="columnemp_fa" msprop:Generator_ColumnPropNameInRow="emp_fa" msprop:Generator_ColumnPropNameInTable="emp_faColumn" msprop:Generator_UserColumnName="emp_fa" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="emp_gf" msprop:Generator_ColumnVarNameInTable="columnemp_gf" msprop:Generator_ColumnPropNameInRow="emp_gf" msprop:Generator_ColumnPropNameInTable="emp_gfColumn" msprop:Generator_UserColumnName="emp_gf" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="emp_ggf" msprop:Generator_ColumnVarNameInTable="columnemp_ggf" msprop:Generator_ColumnPropNameInRow="emp_ggf" msprop:Generator_ColumnPropNameInTable="emp_ggfColumn" msprop:Generator_UserColumnName="emp_ggf" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="family_nam" msprop:Generator_ColumnVarNameInTable="columnfamily_nam" msprop:Generator_ColumnPropNameInRow="family_nam" msprop:Generator_ColumnPropNameInTable="family_namColumn" msprop:Generator_UserColumnName="family_nam" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Dir" msprop:Generator_ColumnVarNameInTable="columnDir" msprop:Generator_ColumnPropNameInRow="Dir" msprop:Generator_ColumnPropNameInTable="DirColumn" msprop:Generator_UserColumnName="Dir" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="emp_case" msprop:Generator_ColumnVarNameInTable="columnemp_case" msprop:Generator_ColumnPropNameInRow="emp_case" msprop:Generator_ColumnPropNameInTable="emp_caseColumn" msprop:Generator_UserColumnName="emp_case" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="case_id" msprop:Generator_ColumnVarNameInTable="columncase_id" msprop:Generator_ColumnPropNameInRow="case_id" msprop:Generator_ColumnPropNameInTable="case_idColumn" msprop:Generator_UserColumnName="case_id" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="file_state" msprop:Generator_ColumnVarNameInTable="columnfile_state" msprop:Generator_ColumnPropNameInRow="file_state" msprop:Generator_ColumnPropNameInTable="file_stateColumn" msprop:Generator_UserColumnName="file_state" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
